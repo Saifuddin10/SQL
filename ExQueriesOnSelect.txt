@@ -1,0 +1,55 @@
+1.write a query to get all the employee details  whose salary is > than 58000.
+
+Ans. SELECT * FROM employee
+     where salary>58000
+
+2.write a query to get all employee details whose job is accountant.
+
+Ans.SELECT * FROM employee
+where job = 'Accountant'
+
+3.write a query to get all employee details whose job is manager.
+
+Ans.SELECT * FROM employee
+where job = 'Manager'
+
+4.write a query to get all employee details whose salary > 55000 and job is manager.
+
+Ans.SELECT * FROM employee
+where salary > 55000 AND job = 'manager'
+
+5.write a query to get all employee details whose address is 789 Oak St.
+
+Ans.SELECT * FROM employee
+where address = '789 Oak St'
+
+6.write a query to get all employee details whose manager is Emily Davis.
+
+Ans.SELECT * FROM employee
+where manager = 'Emily Davis'
+
+7.write a query to get all employee details who dont have manager.
+
+Ans.SELECT * FROM employee
+where manager is NULL
+
+8.write a query to get all employee details whose manager is Emily Davis and salary > 60000 and job is accountant.
+
+Ans.SELECT * FROM employee
+where manager = 'Emily Davis' 
+      AND salary > 60000 
+		AND job = 'accountant' ----- there is no data
+
+9.write a query to get all employee details whose deptid is 13.
+
+Ans.SELECT * FROM employee
+where deptid = 13
+
+10.write a query to get all employee details whose deptid is 13 and salary > 56000 and job is developer.
+
+Ans.SELECT * FROM employee
+where deptid = 13
+  AND salary > 56000
+  AND job = 'developer'
+  
+  
