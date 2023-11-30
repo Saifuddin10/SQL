@@ -28,7 +28,7 @@ WAQTD number of employees whose salary greater than 50500 in each job
 Ans.SELECT job, COUNT(*) as num_employees
     FROM Employee
     WHERE salary > 50500
-    GROUP BY job;
+    GROUP BY job
 
 WAQTD minimum of salary of all employees.
 
