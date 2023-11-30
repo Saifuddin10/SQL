@@ -1,0 +1,37 @@
+WAQTD number of employees working as developer.
+
+Ans. SELECT COUNT(*) AS num_develpoers
+      FROM Employee
+      WHERE job = 'developer'
+
+WAQTD number of employees working in each department
+
+Ans.SELECT deptid, COUNT(*) AS num_employees
+    FROM Employee
+    GROUP BY deptid
+
+WAQTD number of employees working in each job whose name starts with character 'A' or 'a'.
+
+Ans.SELECT job, COUNT(*) AS employee
+    FROM Employee
+    WHERE empname LIKE 'A%' OR empname LIKE 'a%'
+    GROUP BY job
+
+WAQTD total annual salary needed to pay for all the employees in each job.
+
+Ans.SELECT job, SUM(salary) AS total_annual_salary
+    FROM Employee
+    GROUP BY job
+
+WAQTD number of employees whose salary greater than 50500 in each job
+
+Ans.SELECT job, COUNT(*) as num_employees
+    FROM Employee
+    WHERE salary > 50500
+    GROUP BY job;
+
+WAQTD minimum of salary of all employees.
+
+Ans.SELECT MIN(salary) AS min_salary
+    FROM Employee
+
